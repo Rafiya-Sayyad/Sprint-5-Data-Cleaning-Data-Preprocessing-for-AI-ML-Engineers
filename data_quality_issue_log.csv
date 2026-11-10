@@ -1,0 +1,8 @@
+id,column,problem,analysis,technique,notebook,status
+1,TotalCharges,stored as text,11 blank strings,to_numeric(errors='coerce'),Notebook 2,done (Notebook 2)
+2,TotalCharges,11 hidden missing values,"tenure 0, no bill yet",business rule 0 vs median,Notebook 3,done (Notebook 3)
+3,all rows,duplicate check,none found,keep duplicated() check,Notebook 4,done (Notebook 4)
+4,"internet add-ons, MultipleLines",redundant 'No ... service' labels,same fact stored twice,merge into 'No' or encode carefully,"Notebooks 5, 7","validated (Notebook 5), encoding decision in Notebook 7"
+5,customerID,no predictive meaning,it is only a key,drop,Notebook 10,pending
+6,TotalCharges,skewed and correlated with tenure,about tenure x MonthlyCharges,"transform, feature selection check","Notebooks 9, 10",pending
+7,Churn,class imbalance,most customers stay,class weights / SMOTE on train only,Notebook 11,pending
