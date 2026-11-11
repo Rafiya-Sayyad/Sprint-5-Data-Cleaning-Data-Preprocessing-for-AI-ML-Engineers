@@ -1,0 +1,4 @@
+column,min,max,IQR outliers,z-score outliers,skewness,decision
+tenure,0.0,72.0,0,0,0.24,"keep all values, no removal, no capping"
+MonthlyCharges,18.25,118.75,0,0,-0.22,"keep all values, no removal, no capping"
+TotalCharges,0.0,8684.8,0,0,0.96,"keep all values, no removal, no capping; skewed: test a transformation (Notebook 9) and use a robust scaler (Notebook 8)"
